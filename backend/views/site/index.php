@@ -4,7 +4,7 @@ use yii\helpers\Html;
 use yii\grid\GridView;
 use backend\models\Product;
 use backend\models\Member;
-use backend\models\invoice;
+use backend\models\Invoice;
 
 $this->title = '仌仌众梦后台管理系统';
 

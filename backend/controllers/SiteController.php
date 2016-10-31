@@ -1,6 +1,7 @@
 <?php
 namespace backend\controllers;
 
+use common\models\base\User;
 use Yii;
 use yii\filters\AccessControl;
 use yii\web\Controller;
@@ -68,6 +69,12 @@ class SiteController extends BackendController
         }
 
         $model = new LoginForm();
+        /*echo '<pre>';
+        $user = User::findByUsername('admin');
+        var_dump($user->toArray());
+        $user->setPassword('123456') ;
+        $user->save();
+        var_dump($user->toArray());exit;*/
 /* 		print_r(Yii::$app->request->post());
 		var_dump($model->login());
 		exit(); */
